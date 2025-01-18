@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+  }
+  
+  .container {
+    background: #fff;
+    color: #333;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #2575fc;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+  }
+  
+  button {
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #1a5bbf;
+  }
+  
+  #authButtons button {
+    margin: 5px;
+    width: calc(50% - 10px);
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #authButtons #signupButton {
+    background: #28a745;
+  }
+  
+  #authButtons #signupButton:hover {
+    background: #218838;
+  }
+  
+  #authButtons #signinButton {
+    background: #17a2b8;
+  }
+  
+  #authButtons #signinButton:hover {
+    background: #138496;
+  }
+  
+  #response {
+    margin-top: 20px;
+    word-wrap: break-word;
+    font-size: 14px;
+    color: #28a745;
+  }
+  
+  .link-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .link-container a {
+    color: #2575fc;
+    text-decoration: none;
+  }
+  
+  .link-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .copy-button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .copy-button:hover {
+    background: #218838;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  
+    input {
+      font-size: 14px;
+    }
+  }
+  
